@@ -1,0 +1,58 @@
+{
+  "id" : "netuitive.scality.full.package",
+  "version" : "0.1.0",
+  "manifest" : {
+    "name" : "Netuitive Scality Full Package",
+    "description" : "Scality Full package",
+    "author" : {
+      "name" : "Netuitive Research",
+      "email" : "research@netuitve.com"
+    },
+    "distro" : {
+      "logo" : "TBD",
+      "download" : "https://github.com/netuitive-community-packages/netuitive-scality-packages-full/archive/master.zip"
+    },
+    "compatibility" : [ "" ],
+    "tags" : [ ],
+    "checksum" : null
+  },
+  "policies" : [ ],
+  "analyticConfigurations" : [ ],
+  "dashboards" : [ {
+    "data" : {
+      "file" : "dashboards/data.details.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/meta.details.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/scality.fs.connectors.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/scality.rings.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/storage.servers.sproxyd.srebuildd.and.disks.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/scality.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  } ]
+}
