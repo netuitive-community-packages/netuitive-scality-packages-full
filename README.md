@@ -1,7 +1,14 @@
-# netuitive.scality.full.package
+# netuitive.scality.packages.full
 
 ## Release History
 
-### Version 0.1.0
+### Version 1.0.1
 
-* Initial release of the package for monitoring Scality Full Accounts.
+* removing Ring Dashboard since already in package light
+* removing Element Details dashboard since already in package light
+* modifying data.details dashboard
+
+
+### Version 1.0.0
+
+* Initial production release of the package for monitoring Scality Ring resources.

@@ -1,9 +1,9 @@
 {
   "id" : "netuitive.scality.packages.full",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "manifest" : {
-    "name" : "Netuitive Scality Full Package",
-    "description" : "Scality Full package",
+    "name" : "Netuitive Scality full/DCS Package",
+    "description" : "Scality Full/DCS package",
     "author" : {
       "name" : "Netuitive Research",
       "email" : "research@netuitve.com"
@@ -16,43 +16,26 @@
     "tags" : [ ],
     "checksum" : null
   },
-  "policies" : [ ],
-  "analyticConfigurations" : [ ],
-  "dashboards" : [ {
+  "dashboards" : {
     "data" : {
       "file" : "dashboards/data.details.json",
       "encoding" : "application/json",
       "content" : null
-    }
-  }, {
+    },
     "data" : {
       "file" : "dashboards/meta.details.json",
       "encoding" : "application/json",
       "content" : null
-    }
-  }, {
+    },
     "data" : {
       "file" : "dashboards/scality.fs.connectors.json",
       "encoding" : "application/json",
       "content" : null
-    }
-  }, {
+    },
     "data" : {
-      "file" : "dashboards/scality.rings.json",
+      "file" : "dashboards/storage.servers.sproxyds.srebuildds.and.disks.json",
       "encoding" : "application/json",
       "content" : null
     }
-  }, {
-    "data" : {
-      "file" : "dashboards/storage.servers.sproxyd.srebuildd.and.disks.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  }, {
-    "data" : {
-      "file" : "dashboards/scality.element.detail.json",
-      "encoding" : "application/json",
-      "content" : null
-    }
-  } ]
+  }
 }
