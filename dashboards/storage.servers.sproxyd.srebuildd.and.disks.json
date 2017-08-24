@@ -1,108 +1,117 @@
 {
-  "dashboard" : {
-    "name" : "Storage Servers : Sproxyd, Srebuildd and disks",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "timeRangeDuration" : "604800",
-      "gridstackContents" : "[{\"id\":\"0d4ee1d6-c541-4b19-bfc9-080e176de192\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"972732a1-0a2c-45db-9a36-1129df1a1e74\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"6dc27a95-f486-4c01-9ef0-b95d699a8e9b\",\"x\":0,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"05f768b0-19d6-499f-8bf7-0ea667343bb4\",\"x\":6,\"y\":0,\"width\":6,\"height\":9}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "Storage Servers : Sproxyd, Srebuildd and disks",
+    "description": null,
+    "layout": null,
+    "widgets": [
+      {
+        "id": "b6615e5d-bb1d-427b-b0cd-54a17cf55847",
+        "name": "Srebuildds Num op/s",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"srebuildd.num_op\",\"aggFns\":[\"avg\"]}]"
+        },
+        "generated": false
+      },
+      {
+        "id": "dc2d2c95-e0d7-48f3-9799-cc5880b382ce",
+        "name": "Srebuildds avg latency / op",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"srebuildd.avg_latency\",\"aggFns\":[\"avg\"]}]"
+        },
+        "generated": false
+      },
+      {
+        "id": "109330ed-3195-41e8-b8cd-08668cfebf74",
+        "name": "Sproxyd avg latency / op",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"sproxyd.avg_latency\",\"aggFns\":[\"avg\"]}]"
+        },
+        "generated": false
+      },
+      {
+        "id": "6ea3456f-4b98-49b2-8f70-65caa85b7444",
+        "name": "Sproxyds Num op/s",
+        "description": null,
+        "widgetType": "multi-metric",
+        "properties": {
+          "visualization": "line",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "showElementTotal": "true",
+          "elementScopeTags": "[]",
+          "useAllElementScopeTags": "true",
+          "elementScopeTypes": "[]",
+          "metricLimit": "10",
+          "useAllMetricScopeTags": "true",
+          "metricAggs": "[]",
+          "elementScopeIds": "[]",
+          "elementScopeAttributes": "[]",
+          "showHighest": "true",
+          "metricScopeTags": "[]",
+          "useAllElementScopeAttributes": "true",
+          "metricAgg": "avg",
+          "metrics": "[{\"fqn\":\"sproxyd.num_op\",\"aggFns\":[\"avg\"]}]"
+        },
+        "generated": false
+      }
+    ],
+    "properties": {
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true",
+      "gridstackContents": "[{\"id\":\"dc2d2c95-e0d7-48f3-9799-cc5880b382ce\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"6ea3456f-4b98-49b2-8f70-65caa85b7444\",\"x\":0,\"y\":0,\"width\":6,\"height\":9},{\"id\":\"109330ed-3195-41e8-b8cd-08668cfebf74\",\"x\":0,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"b6615e5d-bb1d-427b-b0cd-54a17cf55847\",\"x\":6,\"y\":0,\"width\":6,\"height\":9}]"
     },
-    "widgets" : [ {
-      "id" : "0d4ee1d6-c541-4b19-bfc9-080e176de192",
-      "name" : "Srebuildds avg latency / op",
-      "description" : null,
-      "widgetType" : "multi-metric-time-series",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[{\"value\":\"STORAGE\",\"key\":\"Data_type\"}]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "showArea" : "false",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "metrics" : "[{\"fqn\":\"srebuildd.avg_latency\",\"aggFns\":[\"avg\"]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "972732a1-0a2c-45db-9a36-1129df1a1e74",
-      "name" : "Sproxyds Num op/s",
-      "description" : null,
-      "widgetType" : "multi-metric-time-series",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[{\"value\":\"STORAGE\",\"key\":\"Data_type\"}]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "showArea" : "false",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "metrics" : "[{\"fqn\":\"sproxyd.num_op\",\"aggFns\":[\"avg\"]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "6dc27a95-f486-4c01-9ef0-b95d699a8e9b",
-      "name" : "Sproxyd avg latency / op",
-      "description" : null,
-      "widgetType" : "multi-metric-time-series",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[{\"value\":\"STORAGE\",\"key\":\"Data_type\"}]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "showArea" : "false",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "metrics" : "[{\"fqn\":\"sproxyd.avg_latency\",\"aggFns\":[\"avg\"]}]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "05f768b0-19d6-499f-8bf7-0ea667343bb4",
-      "name" : "Srebuildds Num op/s",
-      "description" : null,
-      "widgetType" : "multi-metric-time-series",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[{\"value\":\"STORAGE\",\"key\":\"Data_type\"}]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "showArea" : "false",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "metrics" : "[{\"fqn\":\"srebuildd.num_op\",\"aggFns\":[\"avg\"]}]",
-        "selectedTab" : "table"
-      }
-    } ],
-    "type" : "DEFAULT",
-    "private" : false
+    "type": "DEFAULT",
+    "private": false
   }
 }
