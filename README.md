@@ -2,6 +2,10 @@
 
 ## Release History
 
+### Version 1.0.2
+
+* Minor bugfixes for the package.json
+
 ### Version 1.0.1
 
 * removing Ring Dashboard since already in package light
