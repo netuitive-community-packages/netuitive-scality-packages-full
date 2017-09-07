@@ -16,7 +16,7 @@
     "tags" : [ ],
     "checksum" : null
   },
-  "dashboards" : {
+  "dashboards" : [ {
     "data" : {
       "file" : "dashboards/data.details.json",
       "encoding" : "application/json",
@@ -37,5 +37,5 @@
       "encoding" : "application/json",
       "content" : null
     }
-  }
+  } ]
 }
