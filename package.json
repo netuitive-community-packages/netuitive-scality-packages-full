@@ -1,41 +1,51 @@
 {
-  "id" : "netuitive.scality.packages.full",
-  "version" : "1.0.1",
-  "manifest" : {
-    "name" : "Netuitive Scality full/DCS Package",
-    "description" : "Scality Full/DCS package",
-    "author" : {
-      "name" : "Netuitive Research",
-      "email" : "research@netuitve.com"
+  "id": "netuitive.scality.packages.full",
+  "version": "1.0.2",
+  "manifest": {
+    "name": "Netuitive Scality full/DCS Package",
+    "description": "Scality Full/DCS package",
+    "author": {
+      "name": "Netuitive Research",
+      "email": "research@netuitve.com"
     },
-    "distro" : {
-      "logo" : "TBD",
-      "download" : "https://github.com/netuitive-community-packages/netuitive-scality-packages-full/archive/master.zip"
+    "distro": {
+      "logo": "TBD",
+      "download": "https://github.com/netuitive-community-packages/netuitive-scality-packages-full/archive/master.zip"
     },
-    "compatibility" : [ "" ],
-    "tags" : [ ],
-    "checksum" : null
+    "compatibility": [
+      ""
+    ],
+    "tags": [],
+    "checksum": null
   },
-  "dashboards" : [ {
-    "data" : {
-      "file" : "dashboards/data.details.json",
-      "encoding" : "application/json",
-      "content" : null
+  "dashboards": [
+    {
+      "data": {
+        "file": "dashboards/data.details.json",
+        "encoding": "application/json",
+        "content": null
+      }
     },
-    "data" : {
-      "file" : "dashboards/meta.details.json",
-      "encoding" : "application/json",
-      "content" : null
+    {
+      "data": {
+        "file": "dashboards/meta.details.json",
+        "encoding": "application/json",
+        "content": null
+      }
     },
-    "data" : {
-      "file" : "dashboards/scality.fs.connectors.json",
-      "encoding" : "application/json",
-      "content" : null
+    {
+      "data": {
+        "file": "dashboards/scality.fs.connectors.json",
+        "encoding": "application/json",
+        "content": null
+      }
     },
-    "data" : {
-      "file" : "dashboards/storage.servers.sproxyds.srebuildds.and.disks.json",
-      "encoding" : "application/json",
-      "content" : null
+    {
+      "data": {
+        "file": "dashboards/storage.servers.sproxyd.srebuildd.and.disks.json",
+        "encoding": "application/json",
+        "content": null
+      }
     }
-  } ]
+  ]
 }
