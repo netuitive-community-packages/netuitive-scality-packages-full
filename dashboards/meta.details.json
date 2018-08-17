@@ -1,216 +1,175 @@
 {
-  "dashboard" : {
-    "name" : "META Details",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "timeRangeDuration" : "259200",
-      "gridstackContents" : "[{\"id\":\"296e81dc-c36c-48a1-8ca1-755a946b4df4\",\"x\":6,\"y\":22,\"width\":6,\"height\":8},{\"id\":\"db273744-7243-4e1a-ba57-87fad5bc27d7\",\"x\":6,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"29bbe083-b969-402f-818c-5b8f7130a6f7\",\"x\":0,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"1f60fc33-61b6-4d07-8c06-f609fcc13110\",\"x\":6,\"y\":14,\"width\":6,\"height\":8},{\"id\":\"7ca66f91-248b-4ba8-9cbc-50c5deecc00d\",\"x\":0,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"e9386bf8-72c0-4021-b09a-061bfa5c9587\",\"x\":6,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"b1f2e8ca-a0a9-431d-8c8b-6d6571871e99\",\"x\":0,\"y\":14,\"width\":6,\"height\":8},{\"id\":\"4f919b27-9be6-46d7-a79a-c673e5865ea1\",\"x\":0,\"y\":22,\"width\":6,\"height\":8}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "META Details",
+    "private": false,
+    "properties": {
+      "gridstackContents": "[{\"id\":\"296e81dc-c36c-48a1-8ca1-755a946b4df4\",\"x\":6,\"y\":22,\"width\":6,\"height\":8},{\"id\":\"db273744-7243-4e1a-ba57-87fad5bc27d7\",\"x\":6,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"29bbe083-b969-402f-818c-5b8f7130a6f7\",\"x\":0,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"1f60fc33-61b6-4d07-8c06-f609fcc13110\",\"x\":6,\"y\":14,\"width\":6,\"height\":8},{\"id\":\"7ca66f91-248b-4ba8-9cbc-50c5deecc00d\",\"x\":0,\"y\":7,\"width\":6,\"height\":7},{\"id\":\"e9386bf8-72c0-4021-b09a-061bfa5c9587\",\"x\":6,\"y\":0,\"width\":6,\"height\":7},{\"id\":\"b1f2e8ca-a0a9-431d-8c8b-6d6571871e99\",\"x\":0,\"y\":14,\"width\":6,\"height\":8},{\"id\":\"4f919b27-9be6-46d7-a79a-c673e5865ea1\",\"x\":0,\"y\":22,\"width\":6,\"height\":8}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "259200",
+      "wrap": "true"
     },
-    "widgets" : [ {
-      "id" : "296e81dc-c36c-48a1-8ca1-755a946b4df4",
-      "name" : "Avg latency Physdeletes",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ms",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.physdel\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]"
+    "type": "DEFAULT",
+    "widgets": [
+      {
+        "id": "296e81dc-c36c-48a1-8ca1-755a946b4df4",
+        "name": "Avg latency Physdeletes",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.physdel\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "29bbe083-b969-402f-818c-5b8f7130a6f7",
+        "name": "Number of Puts / s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ops",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.put\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "db273744-7243-4e1a-ba57-87fad5bc27d7",
+        "name": "Avg latency Gets",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.get\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "1f60fc33-61b6-4d07-8c06-f609fcc13110",
+        "name": "Avg latency Deletes",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.delete\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "7ca66f91-248b-4ba8-9cbc-50c5deecc00d",
+        "name": "Number of Get / s ",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ops",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.get\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "e9386bf8-72c0-4021-b09a-061bfa5c9587",
+        "name": "Avg latency Puts",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ms",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.put\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "b1f2e8ca-a0a9-431d-8c8b-6d6571871e99",
+        "name": "Number of Deletes / s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ops",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.delete\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "id": "4f919b27-9be6-46d7-a79a-c673e5865ea1",
+        "name": "Number of Physdeletes / s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
+          "elementScopeTypes": "[\"RING\"]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "ops",
+          "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.physdel\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
       }
-    }, {
-      "id" : "29bbe083-b969-402f-818c-5b8f7130a6f7",
-      "name" : "Number of Puts / s",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ops",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.put\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "db273744-7243-4e1a-ba57-87fad5bc27d7",
-      "name" : "Avg latency Gets",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ms",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.get\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "1f60fc33-61b6-4d07-8c06-f609fcc13110",
-      "name" : "Avg latency Deletes",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ms",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.delete\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "7ca66f91-248b-4ba8-9cbc-50c5deecc00d",
-      "name" : "Number of Get / s ",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ops",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.get\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "e9386bf8-72c0-4021-b09a-061bfa5c9587",
-      "name" : "Avg latency Puts",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ms",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.put\\\\.avg_latency\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "b1f2e8ca-a0a9-431d-8c8b-6d6571871e99",
-      "name" : "Number of Deletes / s",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ops",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.delete\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    }, {
-      "id" : "4f919b27-9be6-46d7-a79a-c673e5865ea1",
-      "name" : "Number of Physdeletes / s",
-      "description" : null,
-      "widgetType" : "multi-metric",
-      "properties" : {
-        "visualization": "line",
-        "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-        "showElementTotal": "true",
-        "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_RING\"},{\"value\":\"META\",\"key\":\"Ring_type\"}]",
-        "useAllElementScopeTags": "true",
-        "elementScopeTypes": "[\"RING\"]",
-        "metricLimit": "10",
-        "useAllMetricScopeTags": "true",
-        "metricUnit": "ops",
-        "metricAggs": "[]",
-        "elementScopeIds": "[]",
-        "elementScopeAttributes": "[]",
-        "elementNameContains": "",
-        "showHighest": "true",
-        "metricScopeTags": "[]",
-        "useAllElementScopeAttributes": "true",
-        "metricAgg": "avg",
-        "metrics": "[{\"fqn\":\"nodes\\\\..*?\\\\.physdel\\\\.num_op\",\"aggFns\":[],\"useRegex\":true}]"
-      }
-    } ],
-    "type" : "DEFAULT",
-    "private" : false
+    ]
   }
 }

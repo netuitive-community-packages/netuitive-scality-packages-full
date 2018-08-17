@@ -1,219 +1,166 @@
 {
   "dashboard": {
     "name": "Scality FS Connectors",
-    "description": null,
-    "layout": null,
-    "widgets": [
-      {
-        "id": "6e92f1a9-b8cb-4427-9c1e-e54771cc1459",
-        "name": "SOFS PUTs Num op/s",
-        "description": null,
-        "widgetType": "multi-metric",
-        "properties": {
-          "visualization": "line",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "showElementTotal": "true",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"FS.put.num_op\",\"aggFns\":[\"avg\"]}]"
-        },
-        "generated": false
-      },
-      {
-        "id": "65062bc6-33c3-45c4-889c-134f12959760",
-        "name": "SOFS PUT Bandwidth",
-        "description": null,
-        "widgetType": "multi-metric",
-        "properties": {
-          "visualization": "stacked",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "showElementTotal": "true",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "metricUnit": "Bps",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"FS.put.bandwidth\",\"aggFns\":[]}]"
-        },
-        "generated": false
-      },
-      {
-        "id": "f325a99b-f7ea-4625-b92a-2af737843401",
-        "name": "SOFS GETs Num op/s",
-        "description": null,
-        "widgetType": "multi-metric",
-        "properties": {
-          "visualization": "line",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "showElementTotal": "true",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"FS.get.num_op\",\"aggFns\":[\"avg\"]}]"
-        },
-        "generated": false
-      },
-      {
-        "id": "9c220c71-de17-4afd-b971-08d8e71546fb",
-        "name": "SOFS DELETEs Num op/s",
-        "description": null,
-        "widgetType": "multi-metric",
-        "properties": {
-          "visualization": "line",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "showElementTotal": "true",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"FS.delete.num_op\",\"aggFns\":[\"avg\"]}]"
-        },
-        "generated": false
-      },
-      {
-        "id": "88cfd05b-e453-45b3-a821-a0a2b515ce30",
-        "name": "SOFS Avg Latency GETs",
-        "description": null,
-        "widgetType": "multi-metric-time-series",
-        "properties": {
-          "showElementTotal": "true",
-          "selectedAttributes": "[]",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useElementNameContains": "true",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "showArea": "false",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "metrics": "[{\"fqn\":\"FS.get.avg_latency\",\"aggFns\":[\"avg\"]}]",
-          "selectedTab": "table"
-        },
-        "generated": false
-      },
-      {
-        "id": "e263bae6-31cb-4805-a72f-2c6d0967710e",
-        "name": "SOFS GET Bandwidth",
-        "description": null,
-        "widgetType": "multi-metric",
-        "properties": {
-          "visualization": "stacked",
-          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
-          "showElementTotal": "true",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "metricUnit": "Bps",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "useAllElementScopeAttributes": "true",
-          "metricAgg": "avg",
-          "metrics": "[{\"fqn\":\"FS.get.bandwidth\",\"aggFns\":[]}]"
-        },
-        "generated": false
-      },
-      {
-        "id": "a513452b-6269-44d6-8d13-439298968d45",
-        "name": "SOFS Avg Latency DELETEs",
-        "description": null,
-        "widgetType": "multi-metric-time-series",
-        "properties": {
-          "showElementTotal": "true",
-          "selectedAttributes": "[]",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useElementNameContains": "true",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "showArea": "false",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "metrics": "[{\"fqn\":\"FS.delete.avg_latency\",\"aggFns\":[\"avg\"]}]",
-          "selectedTab": "table"
-        },
-        "generated": false
-      },
-      {
-        "id": "5d06bd7d-6d49-4451-8a52-8a3bee8db3e9",
-        "name": "SOFS Avg Latency PUTs",
-        "description": null,
-        "widgetType": "multi-metric-time-series",
-        "properties": {
-          "showElementTotal": "true",
-          "selectedAttributes": "[]",
-          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
-          "useElementNameContains": "true",
-          "useAllElementScopeTags": "true",
-          "elementScopeTypes": "[]",
-          "metricLimit": "10",
-          "useAllMetricScopeTags": "true",
-          "showArea": "false",
-          "metricAggs": "[]",
-          "elementScopeIds": "[]",
-          "elementScopeAttributes": "[]",
-          "showHighest": "true",
-          "metricScopeTags": "[]",
-          "metrics": "[{\"fqn\":\"FS.put.avg_latency\",\"aggFns\":[\"avg\"]}]",
-          "selectedTab": "table"
-        },
-        "generated": false
-      }
-    ],
+    "private": false,
     "properties": {
+      "gridstackContents": "[{\"id\":\"a513452b-6269-44d6-8d13-439298968d45\",\"x\":0,\"y\":24,\"width\":6,\"height\":8},{\"id\":\"6e92f1a9-b8cb-4427-9c1e-e54771cc1459\",\"x\":6,\"y\":8,\"width\":6,\"height\":8},{\"id\":\"e263bae6-31cb-4805-a72f-2c6d0967710e\",\"x\":6,\"y\":0,\"width\":6,\"height\":8},{\"id\":\"9c220c71-de17-4afd-b971-08d8e71546fb\",\"x\":6,\"y\":24,\"width\":6,\"height\":8},{\"id\":\"f325a99b-f7ea-4625-b92a-2af737843401\",\"x\":6,\"y\":16,\"width\":6,\"height\":8},{\"id\":\"5d06bd7d-6d49-4451-8a52-8a3bee8db3e9\",\"x\":0,\"y\":8,\"width\":6,\"height\":8},{\"id\":\"65062bc6-33c3-45c4-889c-134f12959760\",\"x\":0,\"y\":0,\"width\":6,\"height\":8},{\"id\":\"88cfd05b-e453-45b3-a821-a0a2b515ce30\",\"x\":0,\"y\":16,\"width\":6,\"height\":8}]",
       "refreshIntervalSeconds": "300",
       "timeRangeDuration": "3600",
-      "wrap": "true",
-      "gridstackContents": "[{\"id\":\"a513452b-6269-44d6-8d13-439298968d45\",\"x\":0,\"y\":24,\"width\":6,\"height\":8},{\"id\":\"6e92f1a9-b8cb-4427-9c1e-e54771cc1459\",\"x\":6,\"y\":8,\"width\":6,\"height\":8},{\"id\":\"e263bae6-31cb-4805-a72f-2c6d0967710e\",\"x\":6,\"y\":0,\"width\":6,\"height\":8},{\"id\":\"9c220c71-de17-4afd-b971-08d8e71546fb\",\"x\":6,\"y\":24,\"width\":6,\"height\":8},{\"id\":\"f325a99b-f7ea-4625-b92a-2af737843401\",\"x\":6,\"y\":16,\"width\":6,\"height\":8},{\"id\":\"5d06bd7d-6d49-4451-8a52-8a3bee8db3e9\",\"x\":0,\"y\":8,\"width\":6,\"height\":8},{\"id\":\"65062bc6-33c3-45c4-889c-134f12959760\",\"x\":0,\"y\":0,\"width\":6,\"height\":8},{\"id\":\"88cfd05b-e453-45b3-a821-a0a2b515ce30\",\"x\":0,\"y\":16,\"width\":6,\"height\":8}]"
+      "wrap": "true"
     },
     "type": "DEFAULT",
-    "private": false
+    "widgets": [
+      {
+        "generated": false,
+        "id": "6e92f1a9-b8cb-4427-9c1e-e54771cc1459",
+        "name": "SOFS PUTs Num op/s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.put.num_op\",\"aggFns\":[\"avg\"]}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "generated": false,
+        "id": "65062bc6-33c3-45c4-889c-134f12959760",
+        "name": "SOFS PUT Bandwidth",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "Bps",
+          "metrics": "[{\"fqn\":\"FS.put.bandwidth\",\"aggFns\":[]}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "stacked"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "generated": false,
+        "id": "f325a99b-f7ea-4625-b92a-2af737843401",
+        "name": "SOFS GETs Num op/s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.get.num_op\",\"aggFns\":[\"avg\"]}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "generated": false,
+        "id": "9c220c71-de17-4afd-b971-08d8e71546fb",
+        "name": "SOFS DELETEs Num op/s",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.delete.num_op\",\"aggFns\":[\"avg\"]}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "line"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "generated": false,
+        "id": "88cfd05b-e453-45b3-a821-a0a2b515ce30",
+        "name": "SOFS Avg Latency GETs",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.get.avg_latency\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table",
+          "showArea": "false",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true"
+        },
+        "widgetType": "multi-metric-time-series"
+      },
+      {
+        "generated": false,
+        "id": "e263bae6-31cb-4805-a72f-2c6d0967710e",
+        "name": "SOFS GET Bandwidth",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricAgg": "avg",
+          "metricLimit": "10",
+          "metricUnit": "Bps",
+          "metrics": "[{\"fqn\":\"FS.get.bandwidth\",\"aggFns\":[]}]",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "tableColumns": "[{\"columnType\":\"elementType\",\"width\":\"10%\"},{\"columnType\":\"elementName\",\"width\":\"80%\"},{\"columnType\":\"metric\",\"width\":\"10%\",\"metricDisplayName\":null,\"metricFqn\":null,\"metricAggFn\":null,\"metricUnit\":null}]",
+          "useAllElementScopeAttributes": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "visualization": "stacked"
+        },
+        "widgetType": "multi-metric"
+      },
+      {
+        "generated": false,
+        "id": "a513452b-6269-44d6-8d13-439298968d45",
+        "name": "SOFS Avg Latency DELETEs",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.delete.avg_latency\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table",
+          "showArea": "false",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true"
+        },
+        "widgetType": "multi-metric-time-series"
+      },
+      {
+        "generated": false,
+        "id": "5d06bd7d-6d49-4451-8a52-8a3bee8db3e9",
+        "name": "SOFS Avg Latency PUTs",
+        "properties": {
+          "elementScopeTags": "[{\"value\":\"1\",\"key\":\"IS_CONNECTOR\"}]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"FS.put.avg_latency\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table",
+          "showArea": "false",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true"
+        },
+        "widgetType": "multi-metric-time-series"
+      }
+    ]
   }
 }
